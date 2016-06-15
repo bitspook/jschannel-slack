@@ -2,6 +2,7 @@ var slackAPIToken = process.env.SLACK_API_TOKEN;
 var slackBotToken = process.env.SLACK_BOT_TOKEN;
 var port = process.env.PORT || 3000;
 
+//
 if (!slackAPIToken || !slackBotToken) {
   console.error("Required Environtment Variables: $SLACK_API_TOKEN $SLACK_BOT_TOKEN");
   process.exit();
