@@ -7,7 +7,7 @@ if (!slackAPIToken || !slackBotToken) {
   process.exit();
 }
 
-var slackin = require('slackin').default({
+var slackin = require('slackin')({
   token: slackAPIToken,
   interval: 1000,
   org: 'jschannel',
