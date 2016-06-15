@@ -7,14 +7,14 @@ if (!slackAPIToken || !slackBotToken) {
   process.exit();
 }
 
-var slackin = require('slackin')({
+var slackin = require('slackin').default({
   token: slackAPIToken,
   interval: 1000,
   org: 'jschannel',
   silent: false
 });
 
-var slackIRC = require('slack-irc');
+var slackIRC = require('slack-irc').default;
 var ircConfig = {
   "nickname": "jschannel-bot",
   "server": "irc.freenode.org",
